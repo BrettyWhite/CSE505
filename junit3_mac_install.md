@@ -1,11 +1,12 @@
 # Install Legacy JUnit 3.8.x On OSX 
+### This has been tested on OS Sierra and OSX El Capitan
 
 ### Prior
 
 * Pre-Req: you need java installed on your mac. Test by opening the terminal and pasting ``` java -version ```
 * It should respond with something along the lines of java version "1.8.0_102" (your numbers may be different)
 
-### This has been tested on OS Sierra and OSX El Capitan
+### Instructions
 
 * Download JUnit folder from Moodle
 * For ease of use, rename the folder from junit3.x to just junit
