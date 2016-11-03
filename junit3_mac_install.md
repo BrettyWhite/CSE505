@@ -2,7 +2,7 @@
 
 ### Prior
 
-* Pre-Req: you need java installed on your mac. Test by opening the terminal and pasing ``` java -version ```
+* Pre-Req: you need java installed on your mac. Test by opening the terminal and pasting ``` java -version ```
 * It should respond with something along the lines of java version "1.8.0_102" (your numbers may be different)
 
 ### This has been tested on OS Sierra and OSX El Capitan
