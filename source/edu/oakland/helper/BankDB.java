@@ -3,8 +3,8 @@ import edu.oakland.production.*;
 
 public class BankDB{
 	
-	private int bal;
-	private boolean funds = false;
+	public int bal;
+	private boolean funds;
 	
 	public BankDB(int test){
 		bal = test;
@@ -14,9 +14,9 @@ public class BankDB{
 		
 		if(val <= bal){
 			funds = true;
+		}else{
+			funds = false;
 		}
-
-		System.out.println("FUNDS: " + funds);
 		return funds;
 	}
 	
