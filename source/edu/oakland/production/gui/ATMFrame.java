@@ -9,10 +9,8 @@ public class ATMFrame extends JFrame{
 
 	private JButton balanceBtn;
 	private JButton withdrawlBtn;
-
 	private JTextField balanceText;
 	private JTextField withdrawlText;
-	
 	private JLabel balanceLabel;
 	private JLabel withdrawlLabel;
 	private JLabel amtIssuedLabel;
@@ -20,11 +18,9 @@ public class ATMFrame extends JFrame{
 	private JLabel acceptedLabel;
 	private JLabel deniedLabel;
 
-
 	private BankDB dbbank;
 
 	public ATMFrame() {
-		super("testing buttons");
 		setLayout(new FlowLayout());
 		initObjects();
 		addObjects();
@@ -35,7 +31,7 @@ public class ATMFrame extends JFrame{
 		public void actionPerformed(ActionEvent event){
 			Integer bal = Integer.parseInt(balanceText.getText());
 			dbbank =  new BankDB(bal);
-			System.out.println("BAL: " + dbbank.bal);
+			//System.out.println("BAL: " + dbbank.bal);
 		}
 	}
 
@@ -45,7 +41,7 @@ public class ATMFrame extends JFrame{
 			ATM atm = new ATM();
 			atm.getDB(dbbank);
 			if (atm.submit(withdraw)){
-				System.out.println("FUNDS AVAILABLE");
+				//System.out.println("FUNDS AVAILABLE");
 				deniedLabel.setVisible(false);
 				acceptedLabel.setVisible(true);
 				cardStatusLabel.setText("Card Accpted");
@@ -54,7 +50,7 @@ public class ATMFrame extends JFrame{
 				amtIssuedLabel.setVisible(true);
 
 			}else{
-				System.out.println("NOT AVAILABLE");
+				//System.out.println("NOT AVAILABLE");
 				acceptedLabel.setVisible(false);
 				deniedLabel.setVisible(true);
 				cardStatusLabel.setText("Card Rejected");
